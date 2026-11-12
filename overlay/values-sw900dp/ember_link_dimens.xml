@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DeX on a monitor or TV -->
+<resources>
+    <dimen name="ember_card_w">270dp</dimen>
+    <dimen name="ember_card_h">360dp</dimen>
+</resources>

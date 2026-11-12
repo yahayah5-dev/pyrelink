@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pyrelink: glowing frame around the focused or pressed tile (controller, D-pad and touch) -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="150">
+    <item android:state_pressed="true">
+        <inset android:inset="3dp"><shape android:shape="rectangle">
+            <solid android:color="#26FF8A3D" />
+            <stroke android:width="3dp" android:color="#FFFFB070" />
+            <corners android:radius="17dp" />
+        </shape></inset>
+    </item>
+    <item android:state_focused="true">
+        <inset android:inset="3dp"><shape android:shape="rectangle">
+            <solid android:color="#14FF8A3D" />
+            <stroke android:width="3dp" android:color="#FFFF8A3D" />
+            <corners android:radius="17dp" />
+        </shape></inset>
+    </item>
+    <item android:state_selected="true">
+        <inset android:inset="3dp"><shape android:shape="rectangle">
+            <stroke android:width="3dp" android:color="#FFFF8A3D" />
+            <corners android:radius="17dp" />
+        </shape></inset>
+    </item>
+    <item android:drawable="@android:color/transparent" />
+</selector>

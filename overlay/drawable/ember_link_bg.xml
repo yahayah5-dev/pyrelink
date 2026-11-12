@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pyrelink: forge background, a dark room lit by embers from below -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:type="linear" android:angle="90"
+                android:startColor="#FF2A1208" android:centerColor="#FF150E0D" android:endColor="#FF0E0C0D" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:type="radial" android:centerX="0.5" android:centerY="1.05"
+                android:gradientRadius="90%p"
+                android:startColor="#66FF6A1F" android:centerColor="#22C2410C" android:endColor="#00000000" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pyrelink: choices for "Bitrate away from home" -->
+<resources>
+    <string-array name="ember_away_names">
+        <item>5 Mbps (mobile data)</item>
+        <item>10 Mbps (recommended)</item>
+        <item>15 Mbps</item>
+        <item>20 Mbps (fast Wi-Fi)</item>
+    </string-array>
+    <string-array name="ember_away_values">
+        <item>5000</item>
+        <item>10000</item>
+        <item>15000</item>
+        <item>20000</item>
+    </string-array>
+</resources>

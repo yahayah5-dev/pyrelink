@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Unfolded Fold and tablets -->
+<resources>
+    <dimen name="ember_card_w">230dp</dimen>
+    <dimen name="ember_card_h">307dp</dimen>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pyrelink: the Pyrewick flame P, for the boot screen and the sign-in -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <path android:fillColor="#F3E9DF" android:pathData="M24,92V12H58C76,12 88,24 88,40C88,56 76,68 58,68H40V92Z" />
+    <path android:fillColor="#FF8A3D" android:pathData="M60,21C66.5,30 71,35.5 70,44C69,51 65,56 60,56C55,56 51,51 50,44C49,35.5 53.5,30 60,21Z" />
+</vector>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pyrelink: the Pyrelark firebird, dark on ember. 108dp adaptive-icon foreground; the bird sits inside the 66dp safe zone. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+    <group android:translateX="25" android:translateY="25" android:scaleX="0.58" android:scaleY="0.58">
+        <path android:fillColor="#FF1A1210" android:pathData="M50,10C57,22 61,34 60,46C59,58 55,66 50,74C45,66 41,58 40,46C39,34 43,22 50,10Z" />
+        <path android:fillColor="#FF1A1210" android:pathData="M46,46C40,32 28,20 8,14C14,28 20,40 28,48C34,54 40,56 46,56Z" />
+        <path android:fillColor="#FF1A1210" android:pathData="M54,46C60,32 72,20 92,14C86,28 80,40 72,48C66,54 60,56 54,56Z" />
+        <path android:fillColor="#FF7A3410" android:pathData="M50,72C47,80 43,88 38,96C45,92 48,88 50,84C52,88 55,92 62,96C57,88 53,80 50,72Z" />
+        <path android:fillColor="#FFFF8A3D" android:pathData="M48,28a2,2 0,1 0,4 0a2,2 0,1 0,-4 0Z" />
+    </group>
+</vector>

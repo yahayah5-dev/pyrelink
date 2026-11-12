@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pyrelink: game cover size in the app grid (Moonlight's default is 150 x 200 dp). -->
+<resources>
+    <dimen name="ember_card_w">186dp</dimen>
+    <dimen name="ember_card_h">248dp</dimen>
+</resources>

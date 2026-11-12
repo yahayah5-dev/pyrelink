@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Pyrelink's app icon: the Pyrelark firebird on ember -->
+    <color name="pyrelink_icon_bg">#FFFF8A3D</color>
+</resources>

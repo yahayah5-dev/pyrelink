@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pyrelink: the Pyrelark flame between two signal waves. 108dp adaptive-icon foreground. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+    <path android:strokeColor="#FFF2C46B" android:strokeWidth="4" android:strokeLineCap="round" android:fillColor="#00000000"
+        android:pathData="M33.2,42.3 A23,23 0 0,0 33.2,61.7 M74.8,42.3 A23,23 0 0,1 74.8,61.7" />
+    <path android:strokeColor="#FFFF8A3D" android:strokeWidth="4" android:strokeLineCap="round" android:fillColor="#00000000"
+        android:pathData="M26.8,39.3 A30,30 0 0,0 26.8,64.7 M81.2,39.3 A30,30 0 0,1 81.2,64.7" />
+    <group android:translateX="30" android:translateY="26" android:scaleX="2" android:scaleY="2">
+        <path android:fillColor="#FFFF8A3D" android:pathData="M12,2c2,4 6,6 5.4,11 -0.4,3.6 -2.9,6 -5.4,6.6C9.5,19 7,16.6 6.6,13 6,8 10,6 12,2z" />
+        <path android:fillColor="#FFF2C46B" android:pathData="M12,9c1,2.2 3,3.4 2.7,6.2 -0.2,2 -1.5,3.1 -2.7,3.4 -1.2,-0.3 -2.5,-1.4 -2.7,-3.4C9,12.4 11,11.2 12,9z" />
+        <path android:fillColor="#FFC4511C" android:pathData="M6.1,20h11.8a1.1,1.1 0 0 1 0,2.2H6.1a1.1,1.1 0 0 1 0,-2.2z" />
+    </group>
+</vector>
