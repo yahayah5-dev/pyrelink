@@ -952,5 +952,128 @@ $Patches = @(
                 <extra android:name="mode" android:value="account" />
             </intent>
         </Preference>
+'@ },
+
+# ---------------------------------------------------------------- Friends (java\com\limelight\pyrewick\PyrewickFriends.java)
+@{ File = 'app\src\main\AndroidManifest.xml'; Marker = '.pyrewick.PyrewickFriends'
+   Find = @'
+        <!-- Small hack to support launcher shortcuts
+'@
+   Replace = @'
+        <!-- Pyrelink: your Pyrelark friends -->
+        <activity
+            android:name=".pyrewick.PyrewickFriends"
+            android:exported="false"
+            android:resizeableActivity="true"
+            android:theme="@android:style/Theme.Material.NoActionBar"
+            android:configChanges="keyboard|keyboardHidden|navigation|screenLayout|uiMode|orientation|screenSize|smallestScreenSize" />
+
+        <!-- Small hack to support launcher shortcuts
+'@ },
+
+@{ File = 'app\src\main\res\layout\activity_pc_view.xml'; Marker = 'android:id="@+id/pyrewickFriends"'
+   Find = @'
+    <ImageButton
+        android:id="@+id/manuallyAddPc"
+'@
+   Replace = @'
+    <ImageButton
+        android:id="@+id/pyrewickFriends"
+        android:layout_width="70dp"
+        android:layout_height="65dp"
+        android:padding="19dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/manuallyAddPc"
+        android:layout_toStartOf="@+id/manuallyAddPc"
+        android:src="@drawable/pyrewick_friends"
+        android:contentDescription="Friends"
+        android:preferKeepClear="true"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <ImageButton
+        android:id="@+id/manuallyAddPc"
+'@ },
+
+@{ File = 'app\src\main\res\layout\activity_pc_view.xml'; Marker = 'android:layout_toStartOf="@+id/pyrewickFriends"'
+   Find = @'
+        android:layout_toLeftOf="@+id/manuallyAddPc"
+        android:layout_toStartOf="@+id/manuallyAddPc"
+        android:layout_height="65dp"
+'@
+   Replace = @'
+        android:layout_toLeftOf="@+id/pyrewickFriends"
+        android:layout_toStartOf="@+id/pyrewickFriends"
+        android:layout_height="65dp"
+'@ },
+
+@{ File = 'app\src\main\res\layout-land\activity_pc_view.xml'; Marker = 'android:id="@+id/pyrewickFriends"'
+   Find = @'
+        android:src="@drawable/ic_add"
+        style="?android:attr/borderlessButtonStyle"/>
+'@
+   Replace = @'
+        android:src="@drawable/ic_add"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <ImageButton
+        android:id="@+id/pyrewickFriends"
+        android:layout_width="70dp"
+        android:layout_height="65dp"
+        android:padding="19dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/manuallyAddPc"
+        android:src="@drawable/pyrewick_friends"
+        android:contentDescription="Friends"
+        style="?android:attr/borderlessButtonStyle"/>
+'@ },
+
+@{ File = 'app\src\main\java\com\limelight\PcView.java'; Marker = 'PyrewickFriends.class'
+   Find = @'
+        ImageButton helpButton = findViewById(R.id.helpButton);
+'@
+   Replace = @'
+        ImageButton helpButton = findViewById(R.id.helpButton);
+
+        // Pyrelink: Friends (your Pyrelark friends: who's online and what they're playing)
+        findViewById(R.id.pyrewickFriends).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PcView.this, com.limelight.pyrewick.PyrewickFriends.class));
+            }
+        });
+'@ },
+
+@{ File = 'app\src\main\res\xml\preferences.xml'; Marker = 'pyrewick_friends'
+   Find = @'
+        <Preference
+            android:key="ember_account"
+'@
+   Replace = @'
+        <Preference
+            android:key="pyrewick_friends"
+            android:title="Friends"
+            android:summary="Your Pyrelark friends: who's online, requests and your friend code">
+            <intent
+                android:targetPackage="com.pyrewick.pyrelink"
+                android:targetClass="com.limelight.pyrewick.PyrewickFriends" />
+        </Preference>
+        <Preference
+            android:key="ember_account"
+'@ },
+
+# ---------------------------------------------------------------- About: Pyrelink's own source code (GPL-3.0)
+@{ File = 'app\src\main\res\xml\preferences.xml'; Marker = 'github.com/yahayah5-dev/pyrelink'
+   Find = @'
+            url="https://www.gnu.org/licenses/gpl-3.0.html"/>
+'@
+   Replace = @'
+            url="https://www.gnu.org/licenses/gpl-3.0.html"/>
+        <com.limelight.preferences.WebLauncherPreference
+            android:title="Pyrelink's source code"
+            android:summary="Pyrelink's changes to Moonlight, published under the GPL v3. Tap to open them on GitHub."
+            url="https://github.com/yahayah5-dev/pyrelink"/>
 '@ }
 )

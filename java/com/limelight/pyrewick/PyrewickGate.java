@@ -28,7 +28,7 @@ import android.widget.TextView;
 
 /**
  * Pyrelink: the Pyrewick boot screen, then the Pyrelark sign-in, the first time Pyrelink opens each run.
- * Opened with mode=account (from Settings > Pyrelark account) it shows the account: sign out or delete it.
+ * Opened with mode=account (from Settings > Pyrelark account) it shows the account: friends, sign out or delete it.
  *
  * Signed in already: the boot screen shows for a moment and goes. Not signed in: sign in, make an account or
  * reset a password. If Pyrelark's server can't be reached at all, "Continue offline" lets streaming work anyway.
@@ -192,6 +192,11 @@ public class PyrewickGate extends Activity {
             view = "in"; showForm();
         } });
         box.addView(out, lp(0, 6, 0, 0));
+        Button friends = button("Friends", false);
+        friends.setOnClickListener(new View.OnClickListener() { @Override public void onClick(View v) {
+            startActivity(new Intent(PyrewickGate.this, PyrewickFriends.class));
+        } });
+        box.addView(friends, lp(0, 10, 0, 0));
         Button done = button("Done", true);
         done.setOnClickListener(new View.OnClickListener() { @Override public void onClick(View v) { finish(); } });
         box.addView(done, lp(0, 10, 0, 0));

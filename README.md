@@ -16,7 +16,7 @@ This repository holds Pyrelink's changes, applied on top of Moonlight's own sour
 |---|---|
 | `tools/build.ps1` | Downloads Moonlight's source, applies Pyrelink's changes, builds and signs the app |
 | `tools/patches.ps1` | Pyrelink's changes to Moonlight's code |
-| `java/` | Pyrelink's own code (the Pyrelark account and the sign-in screen) |
+| `java/` | Pyrelink's own code (the Pyrelark account, the sign-in screen and Friends) |
 | `overlay/` | Pyrelink's icon, colours and layout values |
 | `MOONLIGHT-COMMIT.txt` | The exact Moonlight version this release was built on |
 
@@ -28,6 +28,7 @@ This release is built on Moonlight commit
 - Opens straight into Pyrelark's big-screen library when your PC is online, and leaves your PC as it was when
   you stop streaming.
 - Sign-in with a Pyrelark account (the same one as on the PC and at pyrelark.com), including account deletion.
+- Friends: who's online and what they're playing, friend requests and codes, and friends' profiles.
 - Pyrelink's name, app ID (`com.pyrewick.pyrelink`), icon and colours; larger game covers; Samsung DeX full screen.
 
 ## Building it yourself

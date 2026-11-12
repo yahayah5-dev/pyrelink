@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pyrelink: Pyrelark's firebird, one colour (tinted in code) for avatars and headings -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <path android:fillColor="#FF8A3D" android:pathData="M50,10C57,22 61,34 60,46C59,58 55,66 50,74C45,66 41,58 40,46C39,34 43,22 50,10Z" />
+    <path android:fillColor="#FF8A3D" android:pathData="M46,46C40,32 28,20 8,14C14,28 20,40 28,48C34,54 40,56 46,56Z" />
+    <path android:fillColor="#FF8A3D" android:pathData="M54,46C60,32 72,20 92,14C86,28 80,40 72,48C66,54 60,56 54,56Z" />
+    <path android:fillColor="#FF8A3D" android:pathData="M50,72C47,80 43,88 38,96C45,92 48,88 50,84C52,88 55,92 62,96C57,88 53,80 50,72Z" />
+</vector>

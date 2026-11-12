@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pyrelink: the Friends button on the PC screen -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path android:strokeColor="#FFF3E9DF" android:strokeWidth="2" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="#00000000"
+        android:pathData="M9,4.5a3.5,3.5 0,1 0,0.01 0zM2.5,20c0.8,-3.6 3.4,-5.5 6.5,-5.5s5.7,1.9 6.5,5.5" />
+    <path android:strokeColor="#FFFF8A3D" android:strokeWidth="2" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="#00000000"
+        android:pathData="M17,6.4a2.6,2.6 0,1 0,0.01 0zM16.5,14.6c2.6,0.2 4.4,1.9 5,5" />
+</vector>
